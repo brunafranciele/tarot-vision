@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import tarotContext from '../context/tarotContext';
+import '../style/login.css';
 
 function Login() {
   const [nameLogin, setNameLogin] = useState('');
@@ -25,23 +26,25 @@ function Login() {
 
   return (
     <main>
-      <h1> Whats your name, querent? </h1>
+      <h1> What's your name, querent? </h1>
       <form>
         <input
           type="text"
           required="required"
-          placeholder="NAME"
+          placeholder="Name"
           onChange={({ target }) => setNameLogin(target.value)}
         />
-        <Link to="/main-page">
-          <button
-            type="button"
-            disabled={isDisabled}
-            onClick={handleRedirect}
-          >
-            Start
+        <div>
+          <Link to="/main-page">
+            <button
+              type="button"
+              disabled={isDisabled}
+              onClick={handleRedirect}
+            >
+              Start
           </button>
-        </Link>
+          </Link>
+        </div>
       </form>
     </main>
   );
