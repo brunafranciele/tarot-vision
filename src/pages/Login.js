@@ -24,16 +24,15 @@ function Login() {
   };
 
   return (
-    <form>
-      <fieldset>
-        <label>
-          <input
-            type="text"
-            required="required"
-            placeholder="NAME"
-            onChange={({ target }) => setNameLogin(target.value)}
-          />
-        </label>
+    <main>
+      <h1> Whats your name, querent? </h1>
+      <form>
+        <input
+          type="text"
+          required="required"
+          placeholder="NAME"
+          onChange={({ target }) => setNameLogin(target.value)}
+        />
         <Link to="/main-page">
           <button
             type="button"
@@ -43,9 +42,8 @@ function Login() {
             Start
           </button>
         </Link>
-      </fieldset>
-    </form>
-
+      </form>
+    </main>
   );
 }
 
