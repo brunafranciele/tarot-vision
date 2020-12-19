@@ -4,7 +4,7 @@ import fetchTarot from '../services/GetAPI';
 
 function TarotProvider({ children }) {
   const [nameUser, setNameUser] = useState('');
-  const [dataAPI, setDataAPI] = useState({});
+  const [dataAPI, setDataAPI] = useState([]);
 
   const getDataFromAPI = async () => {
     const cards = await fetchTarot();
