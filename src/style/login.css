@@ -27,6 +27,7 @@ main form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 15%;
 }
 
 main form input {
@@ -63,10 +64,10 @@ main form button {
 }
 
 .div-footer {
-  margin-top: 500%;
   text-align: center;
   color: #faeff1;
   clear: both;
+  font-family: 'Roboto', 'sans-serif';
 }
 
 /* @media only screen (min-width: 375px) and (max-width: 812) {

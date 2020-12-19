@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Sniglet&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 .bodyMain {
   background-image: url(../images/purpleuniverse.jpg);
@@ -33,7 +34,7 @@
 }
 
 .question {
-  margin-top: 20%;
+  margin-top: 25%;
   text-align: center;
   color: white;
   font-size: 4.5em;
@@ -45,12 +46,12 @@
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 30%;
+  margin-bottom: 6%;
 }
 
 .button {
   margin-top: 10%;
-  margin-bottom: 40%;
+  margin-bottom: 10%;
   width: 45%;
   font-size: 2em;
   font-weight: 100;
@@ -66,4 +67,5 @@
   margin-top: 10%;
   text-align: center;
   color: #faeff1;
+  font-family: 'Roboto', 'sans-serif';
 }
