@@ -8,11 +8,16 @@ function MainPage() {
   const { dataAPI, getDataFromAPI, nameUser } = useContext(tarotContext);
   const [showCard, setShowCard] = useState(false);
 
-  function handleClick() {
+  useEffect(() => {
     getDataFromAPI();
+  }, [])
+
+  function handleClick() {
     setShowCard(true);
   }
-
+  if(dataAPI.length === 0) {
+    <h1>Loading...</h1>
+  }
   return (
     <div className="bodyMain">
       <div>
