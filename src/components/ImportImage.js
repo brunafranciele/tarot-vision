@@ -1,2 +1,3 @@
-import ar00 from '../images/ar00.png';
-export default ar00;
+import ar00Card from '../images/ar00Card.png';
+
+export const ar00 = ar00Card;
