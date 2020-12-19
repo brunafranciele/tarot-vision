@@ -2,16 +2,19 @@ import React, { useState, useContext, useEffect } from 'react';
 import tarotContext from '../context/tarotContext';
 
 function MainPage() {
-  const { dataAPI, getDataFromAPI, name } = useContext(tarotContext);
-  const [ mainCard, setMainCard ] = useState([]);
+  const { dataAPI, getDataFromAPI, nameUser } = useContext(tarotContext);
 
   useEffect(async () => {
-    const returnAPI = await getDataFromAPI();
-    setMainCard(returnAPI)
+    getDataFromAPI();
   }, [])
 
   return (
-    <p>{ console.log(mainCard) }</p>
+    <div>
+    <p>{ console.log(dataAPI) }</p>
+    <p>{ console.log(dataAPI.value) }</p>
+    <p>{ console.log(dataAPI.type) }</p>
+    <p>{ console.log(dataAPI.name) }</p>
+    </div>
   );
 }
 
