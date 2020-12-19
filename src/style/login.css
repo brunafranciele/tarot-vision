@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Sniglet&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-body {
-  background-image: url(../images/login.png);
+
+.bodyLogin {
+  background: url(../images/login.png)
+  no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
 }
 
 main h1 {
@@ -52,6 +60,13 @@ main form button {
 .logoLogin {
   display: flex;
   justify-content: center;
+}
+
+.div-footer {
+  margin-top: 500%;
+  text-align: center;
+  color: #faeff1;
+  clear: both;
 }
 
 /* @media only screen (min-width: 375px) and (max-width: 812) {

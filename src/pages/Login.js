@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import tarotContext from '../context/tarotContext';
 import LogoTarotVision from '../images/LogoTarotVision.png';
+import Footer from '../components/Footer';
 import '../style/login.css';
 
 function Login() {
@@ -26,7 +27,7 @@ function Login() {
   };
 
   return (
-    <main>
+    <main className="bodyLogin">
       <div className="logoLogin">
       <img src={ LogoTarotVision } alt="Logo Tarot Vision" />
       </div>
@@ -50,6 +51,9 @@ function Login() {
           </Link>
         </div>
       </form>
+      <div className="div-footer">
+        <Footer />
+      </div>
     </main>
   );
 }
