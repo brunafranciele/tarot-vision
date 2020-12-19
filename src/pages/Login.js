@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import tarotContext from '../context/tarotContext';
+import LogoTarotVision from '../images/LogoTarotVision.png';
 import '../style/login.css';
 
 function Login() {
@@ -26,6 +27,9 @@ function Login() {
 
   return (
     <main>
+      <div className="logoLogin">
+      <img src={ LogoTarotVision } alt="Logo Tarot Vision" />
+      </div>
       <h1> What's your name, querent? </h1>
       <form>
         <input

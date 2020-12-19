@@ -7,7 +7,7 @@ body {
 
 main h1 {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 2%;
   text-shadow: 0px 0px 25px white;
   font-size: 5em;
   color: black;
@@ -47,6 +47,11 @@ main form button {
   color: #6b6470;
   box-shadow:  0px 0px 10px white;
   font-family: 'Sniglet', cursive;
+}
+
+.logoLogin {
+  display: flex;
+  justify-content: center;
 }
 
 /* @media only screen (min-width: 375px) and (max-width: 812) {
