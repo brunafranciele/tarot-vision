@@ -1,28 +1,30 @@
 import React, { useState, useContext, useEffect } from 'react';
 import tarotContext from '../context/tarotContext';
+import Answer from '../components/Answer';
+import Footer from '../components/Footer';
 import '../style/mainPage.css';
 
 function MainPage() {
   const { dataAPI, getDataFromAPI, nameUser } = useContext(tarotContext);
+  const [showCard, setShowCard] = useState(false);
 
-  useEffect(() => {
+  function handleClick() {
     getDataFromAPI();
-  }, []);
-
-  if(dataAPI.length === 0) {
-    console.log('if');
-    return <h1>Loading...</h1>
+    setShowCard(true);
   }
 
   return (
-    <div>
-    <img src={ `/${dataAPI.name_short}.png` } alt="tentativa de foto"/>
-    {console.log(dataAPI)}
-    {/* <p>{ console.log(dataAPI) }</p>
-    <p>{ console.log(dataAPI.value) }</p>
-    <p>{ console.log(dataAPI.type) }</p>
-    <p>{ console.log(dataAPI.name) }</p>
-    <p>{ console.log(dataAPI.name_short) }</p> */}
+    <div className="bodyMain">
+      <div>
+        {showCard ?
+        <Answer /> :
+        <h1 className="question">{ nameUser ? nameUser : 'Querent' }, think about a question...</h1>
+        }
+      </div>
+      {!showCard && <button className="button" type="button" onClick={ handleClick }>Get my answer</button>}
+      <div className="div-footer">
+        <Footer />
+      </div>
     </div>
   );
 }
