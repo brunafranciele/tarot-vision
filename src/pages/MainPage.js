@@ -18,6 +18,7 @@ function MainPage() {
   if(dataAPI.length === 0) {
     <h1>Loading...</h1>
   }
+  
   return (
     <div className="bodyMain">
       <div>
