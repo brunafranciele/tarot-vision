@@ -6,7 +6,7 @@ import '../style/login.css';
 function Login() {
   const [nameLogin, setNameLogin] = useState('');
   const [isDisabled, setIsDisabled] = useState(true);
-  const { setName } = useContext(tarotContext);
+  const { setNameUser } = useContext(tarotContext);
 
   useEffect(() => {
     const two = 2;
@@ -21,7 +21,7 @@ function Login() {
   };
 
   const handleRedirect = () => {
-    setName(nameLogin);
+    setNameUser(nameLogin);
   };
 
   return (

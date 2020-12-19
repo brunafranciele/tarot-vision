@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import tarotContext from './tarotContext';
+import fetchTarot from '../services/GetAPI';
 
 function TarotProvider({ children }) {
-  const [name, setName] = useState('');
-  const [data, setData] = useState([]);
+  const [nameUser, setNameUser] = useState('');
+  const [dataAPI, setDataAPI] = useState({});
 
-  // const getData = async () => {
-  //   const cards = await fetchTarot();
-  //   setData(cards);
-  // };
+  const getDataFromAPI = async () => {
+    const cards = await fetchTarot();
+    setDataAPI(cards);
+  };
   
   const valueProvider = {
-    data,
-    setData,
-    name,
-    setName,
+    getDataFromAPI,
+    dataAPI,
+    setDataAPI,
+    nameUser,
+    setNameUser,
   }
 
   return(
