@@ -13,7 +13,7 @@ function Answer() {
   return (
     <div className="bodyMain">
       <div className="div-image">
-        <img src={ `/${dataAPI.name_short}.png` } alt="tentativa de foto"/>
+        <img src={ `/${dataAPI.name_short}.png` } alt="tentativa de foto"/> 
       </div>
       <div className="div-answer">
         <h2 className="text-answer h2answer">{ dataAPI.name }</h2>
