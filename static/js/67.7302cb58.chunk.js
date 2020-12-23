@@ -1,0 +1,2 @@
+(this.webpackJsonptarotvision=this.webpackJsonptarotvision||[]).push([[67],{101:function(t,s,i){"use strict";i.r(s),s.default=i.p+"static/media/swpa.57dce69c.png"}}]);
+//# sourceMappingURL=67.7302cb58.chunk.js.map
