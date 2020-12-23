@@ -1,21 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Della+Respira&family=Indie+Flower&family=Langar&family=Roboto:wght@500&display=swap');
 
-.bodyMain {
+.bodyAnswer {
   background-image: url(../images/purpleuniverse.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.question {
-  margin-top: 25%;
-  text-align: center;
+.text-answer {
   color: white;
-  font-size: 3em;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Della Respira', serif;
+  font-size: 1.4em;
+  line-height: 37px;
+}
+
+.div-image {
+  margin-top: 5%;
+}
+
+.h2answer {
   text-shadow: 0px 0px 25px white;
 }
 
@@ -23,44 +32,67 @@
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 6%;
+  margin-bottom: 2%;
 }
 
-.button {
-  margin-top: 10%;
-  margin-bottom: 15%;
+.play-again {
+  margin-top: 5%;
   width: 45%;
   font-size: 1.4em;
   font-weight: 100;
-  line-height: 40px;
   letter-spacing: 2px;
   border-radius: 5px;
   background-color: #281646;
+  color: white;
   box-shadow:  0px 0px 10px rgb(119, 119, 119);
   font-family: 'Sniglet', cursive;
 }
 
-.div-footer {
-  margin-top: 10%;
+.go-home {
+  margin-bottom: 10%;
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  background-color: #281646;
+  color: white;
+  box-shadow:  0px 0px 10px rgb(119, 119, 119);
+  font-family: 'Sniglet', cursive;
+}
+
+.div-footer-answer  {
   text-align: center;
   color: #faeff1;
   font-family: 'Roboto', 'sans-serif';
   bottom: 0;
-  position: absolute;
+  font-size: 0.6em;
+  margin-top: 5%;
 }
 
 @media screen and (min-width: 812px) {
-  .question {
-    font-size: 4.5em;
+  .text-answer {
+    font-size: 1.7em;
+    line-height: 40px;
   }
 
-  .button {
-    font-size: 2em;
-    line-height: 50px;
+  .play-again {
+    margin-top: 5%;
+    margin-bottom: 0;
     width: 25%;
+    font-size: 2em;
   }
 
-  .div-footer {
+  .go-home {
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 2em;
+  }
+  .div-footer-answer  {
     font-size: 1em;
+  }
+
+  .h2answer {
+    font-size: 3em;
   }
 }

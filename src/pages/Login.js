@@ -25,7 +25,7 @@ function Login() {
   return (
     <main className="bodyLogin">
       <div className="logoLogin">
-      <img src={ LogoTarotVision } alt="Logo Tarot Vision" />
+      <img className="logo" src={ LogoTarotVision } alt="Logo Tarot Vision" />
       </div>
       <h1> What's your name, querent? </h1>
       <form>
