@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import tarotContext from '../context/tarotContext';
-import LogoTarotVision from '../images/logo2.png';
+import LogoTarotVision from '../images/LogoTarotVision.png';
 import Footer from '../components/Footer';
 import '../style/login.css';
 
